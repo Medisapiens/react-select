@@ -6,6 +6,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import CreateClass from 'create-react-class';
 import ReactDOM from 'react-dom';
 import AutosizeInput from 'react-input-autosize';
 import classNames from 'classnames';
@@ -41,7 +42,7 @@ const stringOrNode = PropTypes.oneOfType([
 
 let instanceId = 1;
 
-const Select = React.createClass({
+const Select = CreateClass({
 
 	displayName: 'Select',
 

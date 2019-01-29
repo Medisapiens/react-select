@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import CreateClass from 'create-react-class';
 import classNames from 'classnames';
 
-const Value = React.createClass({
+const Value = CreateClass({
 
 	displayName: 'Value',
 
