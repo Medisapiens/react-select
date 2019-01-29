@@ -2075,8 +2075,8 @@ var Async = (function (_Component) {
 			}
 		}
 	}, {
-		key: 'componentWillUpdate',
-		value: function componentWillUpdate(nextProps, nextState) {
+		key: 'UNSAFE_componentWillUpdate',
+		value: function UNSAFE_componentWillUpdate(nextProps, nextState) {
 			var _this = this;
 
 			var propertiesToSync = ['options'];
@@ -2995,7 +2995,7 @@ var Select = (0, _createReactClass2['default'])({
 		};
 	},
 
-	componentWillMount: function componentWillMount() {
+	UNSAFE_componentWillMount: function UNSAFE_componentWillMount() {
 		this._instancePrefix = 'react-select-' + (this.props.instanceId || ++instanceId) + '-';
 		var valueArray = this.getValueArray(this.props.value);
 
@@ -3012,7 +3012,7 @@ var Select = (0, _createReactClass2['default'])({
 		}
 	},
 
-	componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps: function UNSAFE_componentWillReceiveProps(nextProps) {
 		var valueArray = this.getValueArray(nextProps.value, nextProps);
 
 		if (nextProps.required) {
@@ -3022,7 +3022,7 @@ var Select = (0, _createReactClass2['default'])({
 		}
 	},
 
-	componentWillUpdate: function componentWillUpdate(nextProps, nextState) {
+	UNSAFE_componentWillUpdate: function UNSAFE_componentWillUpdate(nextProps, nextState) {
 		if (nextState.isOpen !== this.state.isOpen) {
 			this.toggleTouchOutsideEvent(nextState.isOpen);
 			var handler = nextState.isOpen ? nextProps.onOpen : nextProps.onClose;

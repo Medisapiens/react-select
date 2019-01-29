@@ -67,7 +67,7 @@ export default class Async extends Component {
 		}
 	}
 
-	componentWillUpdate (nextProps, nextState) {
+	UNSAFE_componentWillUpdate (nextProps, nextState) {
 		const propertiesToSync = ['options'];
 		propertiesToSync.forEach((prop) => {
 			if (this.props[prop] !== nextProps[prop]) {
